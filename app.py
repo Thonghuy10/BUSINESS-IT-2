@@ -68,11 +68,7 @@ with st.sidebar:
         unsafe_allow_html=True
     )
     
-    page = st.radio(
-        "📌 Choose a section",
-        ["Homepages","Overview", "Visualizations", "Advanced Insights"],
-        key="navigation"
-    )
+   
     
     # Thêm metrics tóm tắt trong sidebar
     st.markdown("---")
