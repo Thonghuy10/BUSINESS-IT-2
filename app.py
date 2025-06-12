@@ -116,10 +116,10 @@ with main_container:
         unsafe_allow_html=True
     )
       # Nội dung theo trang
-if page == "homepages":
-        show_homepages()
-    elif page == "Overview":
+    if page == "Overview":
         show_overview()
+    elif page == "homepages":
+        show_homepages()
     elif page == "Visualizations":
         show_visualizations()
     elif page == "Advanced Insights":
