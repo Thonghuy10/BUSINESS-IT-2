@@ -70,7 +70,7 @@ with st.sidebar:
     
     page = st.radio(
         "📌 Choose a section",
-        ["Overview", "Visualizations", "Advanced Insights"],
+        ["Homepages","Overview", "Visualizations", "Advanced Insights"],
         key="navigation"
     )
     
@@ -116,7 +116,9 @@ with main_container:
         unsafe_allow_html=True
     )
       # Nội dung theo trang
-    if page == "Overview":
+    if page == "homepages":
+        show_homepages()
+    elif page == "Overview":
         show_overview()
     elif page == "Visualizations":
         show_visualizations()
