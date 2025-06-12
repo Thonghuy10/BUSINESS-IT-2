@@ -68,10 +68,10 @@ with st.sidebar:
         unsafe_allow_html=True
     )
     
-     page = st.radio(
-        "📌 Choose a section",
-        ["Homepages","Overview", "Visualizations", "Advanced Insights"],
-        key="navigation"
+ page = st.radio(
+"📌 Choose a section",
+["Homepages","Overview", "Visualizations", "Advanced Insights"],
+ key="navigation"
     )
    
     
