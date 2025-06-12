@@ -116,8 +116,15 @@ with main_container:
         unsafe_allow_html=True
     )
       # Nội dung theo trang
-    if page == "homepages":
+if page == "homepages":
         show_homepages()
+    elif page == "Overview":
+        show_overview()
+    elif page == "Visualizations":
+        show_visualizations()
+    elif page == "Advanced Insights":
+        show_insights()
+ 
    
 # Thêm watermark subtle
 st.markdown(
